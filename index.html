@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="shortcut icon" href="recursos/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <link 
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/styles.css">
     <title>PURO | Inicio</title>
 </head>
 <body id="bodyIndex">
@@ -54,30 +55,32 @@
     <h2>Cómo hago mi pedido?</h2>
     <section class="infoInicio">
         <div class="comoHagoMipedido">
+            <i class="far fa-hand-point-up comoHagoMiPedido__iconos"></i>
             <h3>Elegí tus productos</h3>
-            <img src="Imagen" alt=""> <!-- FALTA AGREGAR ICONOS --> 
         </div>
         <div class="comoHagoMipedido">
+            <i class="fab fa-whatsapp comoHagoMiPedido__iconos"></i>
             <h3>Hacé tu pedido al WSP</h3>
-            <img src="Imagen" alt=""> <!-- FALTA AGREGAR ICONOS --> 
         </div>
         <div class="comoHagoMipedido">
+            <i class="fas fa-credit-card comoHagoMiPedido__iconos"></i>
             <h3>Pagá como quieras</h3>
-            <img src="Imagen" alt=""> <!-- FALTA AGREGAR ICONOS --> 
         </div>
         <div class="comoHagoMipedido">
+            <i class="fas fa-shipping-fast comoHagoMiPedido__iconos"></i>
             <h3>Recibilo en tu casa</h3>
-            <img src="Imagen" alt=""> <!-- FALTA AGREGAR ICONOS --> 
         </div>
     </section>
     <div class="botonWsp">
-        <a class="botonWsp__boton" href="https://web.whatsapp.com/" target="_blank" >HACE TU PEDIDO</a> <!-- FALTA AGREGAR ICONO DE WHATSAPP AL BOTON --> 
+        <a class="botonWsp__boton" href="https://web.whatsapp.com/" target="_blank" >HACE TU PEDIDO <i class="fab fa-whatsapp"></i></a>
     </div>
     <footer> 
         <div class="footerDiv">
             <h3>Enterate de nuestras promos</h3>
-            <input type="email">
-            <button>Suscribite</button>
+            <div class="footerDiv__suscribite">
+                <input type="email" placeholder="Escriba aquí su email">
+                <button type="submit" class="btn btn-light">Suscribite</button>
+            </div>
         </div>
         <div class="footerDiv"> <!-- FALTA REEMPLAZAR IMAGEN POR ICONOS --> 
             <h3>Medios de Pago</h3>
@@ -85,7 +88,11 @@
         </div>
         <div class="footerDiv"> <!-- FALTA REEMPLAZAR IMAGEN POR ICONOS --> 
             <h3>Seguinos en nuestras redes</h3>
-            <img src="https://miracomosehace.com/wp-content/uploads/2020/02/redes-sociales.jpg" width="150" height="50" alt="">
+            <div>
+                <a href="https://www.instagram.com/puro.smartfood/" target="_blank" class="footerDiv__iconos"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/puro.smartfood" target="_blank" class="footerDiv__iconos"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="footerDiv__iconos"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
         <p id="footerDerechos">Todos los derechos reservados. Powered by Emilia Aller Atucha</p>
     </footer>
