@@ -4,35 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="shortcut icon" href="../recursos/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>PURO | Recetips</title>
 </head>
 <body>
     <header>
-        <article class="articleNav">
-            <div class="articleNav__logo">
-                <a href="../index.html"><img id="logo" src="../recursos/logo.png" alt="logo"></a>
-            </div>
-            <div class="articleNav__nav">
-                <nav>
-                    <ul>
-                        <li><a class="nav" href="../index.html">INICIO</a></li>
-                        <li><a class="nav" href="productos.html">PRODUCTOS</a></li>
-                        <li><a class="nav" href="recetips.html">RECETIPS</a></li>
-                        <li><a class="nav" href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a></li>
-                        <li><a class="nav" href="contacto.html">CONTACTO</a></li>
-                    </ul> 
-                </nav>
-            </div>
-            <div class="divLinea">
-                <hr class="linea">  
-            </div>
-        </article>  
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a href="../index.html" class="navbar-brand"><img class="d-inline-block align-top" src="../recursos/logo.png" alt="" width="80" height="80"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="navbarTogglerDemo02">
+                    <li class="nav item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav item active"><a class="nav-link" href="recetips.html">Recetips</a></li>
+                    <li class="nav item"><a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li class="nav item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div> 
+        </nav>    
     </header>
-    <h2>Bocaditos Chocolatosos</h2>
+    <section class="tituloBocaditos">
+        <h2>Bocaditos Chocolatosos</h2>
+    </section>
     <section class="recetip1">
         <div class="recetip__img">
             <img src="../recursos/recetip1.jpg" width="300" height="400" alt="recetip1">
@@ -41,7 +48,9 @@
             <p class="parrafos">Bocaditos hiper chocolatosos para hacer con nuestra granola en menos de 10'. Simplemente derretís 1 tableta de chocolate para taza y le agregas 1 taza de granola. Mezclás y vas agarrando cucharadas de la mezcla y las pones en una fuente. Al frizzer 5' y listo! Tenés unos bocaditos dulces de granola y chocolate exquisitos!</p>
         </div>
     </section>
-    <h2>Desayuno To-Go</h2>
+    <section>
+        <h2>Desayuno To-Go</h2>
+    </section>
     <section class="recetip2">
         <div class="recetip__img">
             <img src="../recursos/recetip2.jpg" width="300" height="400" alt="recetip2">
@@ -50,7 +59,9 @@
             <p class="parrafos">Gran idea para tus desayunos o meriendas cuando tenés poco tiempo. En un frasco vacío que tengas ponés la cantidad de yoghurt que consumas, la fruta que quieras cortada y una porción de nuestra Granola. Listo! Te lo llevás al trabajo y te aseguras de tenes un desayuno completo siempre.</p>
         </div>
     </section>
-    <h2>Cookies saludables</h2>
+    <section>
+        <h2>Cookies saludables</h2>
+    </section>
     <section class="recetip1">
         <div class="recetip__img">
             <img src="../recursos/recetip3.jpg" width="300" height="400" alt="recetip3">
@@ -59,21 +70,32 @@
             <p class="parrafos">Fáciles y rápidas: mezclás 1 taza de nuestra granola (con o sin pasas), 1 huevo y 1 cucharadita de miel. Formás "montoncitos" en una asadera y la mandás 10' al horno. Listo! Tenés unas cookies super ricas y saludables!</p>
         </div>
     </section>
-    <footer>
-        <div class="footerDiv">
-            <h3>Enterate de nuestras promos</h3>
-            <input type="email">
-            <button>Suscribite</button>
-        </div>
-        <div class="footerDiv">
-            <h3>Medios de Pago</h3>
-            <img src="https://w7.pngwing.com/pngs/32/363/png-transparent-visa-master-card-and-american-express-mastercard-payment-visa-credit-card-emv-credit-card-visa-and-master-card-background-text-display-advertising-logo.png" width="200" height="50" alt="">
-        </div>
-        <div class="footerDiv">
-            <h3>Seguinos en nuestras redes</h3>
-            <img src="https://miracomosehace.com/wp-content/uploads/2020/02/redes-sociales.jpg" width="150" height="50" alt="">
-        </div>
-        <p id="footerDerechos">Todos los derechos reservados. Powered by Emilia Aller Atucha</p>
+    <footer> 
+        <section class="row">
+            <div class="col-md-4 col-sm-12 footerDiv">
+                <h3>Enterate de nuestras promos</h3>
+                <div class="footerDiv__suscribite">
+                    <input type="email" placeholder="Escriba aquí su email">
+                    <button type="submit" class="btn btn-light">Suscribite</button>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 footerDiv">
+                <h3>Medios de Pago</h3>
+                <img src="https://w7.pngwing.com/pngs/32/363/png-transparent-visa-master-card-and-american-express-mastercard-payment-visa-credit-card-emv-credit-card-visa-and-master-card-background-text-display-advertising-logo.png" width="200" height="50" alt="">
+            </div>
+            <div class="col-md-4 col-sm-12 footerDiv">
+                <h3>Seguinos en nuestras redes</h3>
+                <div>
+                    <a href="https://www.instagram.com/puro.smartfood/" target="_blank" class="footerDiv__iconos"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/puro.smartfood" target="_blank" class="footerDiv__iconos"><i class="fab fa-facebook"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="footerDiv__iconos"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p class="col-md-12 col-sm-12">Todos los derechos reservados. Powered by Emilia Aller Atucha</p>
+        </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

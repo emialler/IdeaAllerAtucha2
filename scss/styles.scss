@@ -315,6 +315,10 @@ h2 {
     color: gray;
 }
 
+.tituloGranolas {
+    margin-top: 120px;
+}
+
 .ingredientes {
     font-size: 16px;
     color: gray;
@@ -327,7 +331,7 @@ h2 {
 
 .sectionGranolas {
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -341,38 +345,22 @@ h2 {
 
 .sectionMix {
     width: 100%;
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: 100%;
-    grid-template-areas: "mix1 mix2 mix3 mix4";
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
 }
 
-.mix1 {
-    grid-area: mix1;
-    text-align: center;
-}
-
-.mix2 {
-    grid-area: mix2;
-    text-align: center;
-}
-
-.mix3 {
-    grid-area: mix3;
-    text-align: center;
-}
-
-.mix4 {
-    grid-area: mix4;
+.sectionMix div {
+    width: 20%;
+    padding: 0 10px;
     text-align: center;
 }
 
 .sectionBarras {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 500px;
     justify-content: space-around;
     align-items: flex-start;
     margin-bottom: 50px;
@@ -385,6 +373,10 @@ h2 {
 /* FIN-PAGINA PRODUCTOS */
 
 /* INICIO-PAGINA RECETIPS */
+
+.tituloBocaditos {
+    margin-top: 120px;
+}
 
 .recetip1 {
     display: flex;
@@ -412,7 +404,8 @@ h2 {
 /* INICIO-PAGINA PREGUNTAS FRECUENTES */
 
 .sectionPreguntas {
-    height: 800px;
+    margin-top: 100px;
+    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -427,7 +420,7 @@ h2 {
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -436,9 +429,10 @@ h2 {
 /* INCIO-PAGINA CONTACTO */
 
 #mainContacto {
+    margin-top: 100px;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .sectionContacto {
