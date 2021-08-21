@@ -10,63 +10,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>PURO | Inicio</title>
 </head>
 <body id="bodyIndex">
     <header>
-        <article class="articleNav">
-            <div class="articleNav__logo">
-                <a href="index.html"><img id="logo" src="recursos/logo.png" alt="logo"></a> 
-            </div>
-            <div class="articleNav__nav">
-                <nav>
-                    <ul>
-                        <li><a class="nav" href="index.html">INICIO</a></li>
-                        <li><a class="nav" href="pages/productos.html">PRODUCTOS</a></li>
-                        <li><a class="nav" href="pages/recetips.html">RECETIPS</a></li>
-                        <li><a class="nav" href="pages/preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a></li>
-                        <li><a class="nav" href="pages/contacto.html">CONTACTO</a></li>
-                    </ul> 
-                </nav>
-            </div>
-        </article>   
-        <div class="lineaHeader"></div> 
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a href="index.html" class="navbar-brand"><img class="d-inline-block align-top" src="recursos/logo.png" alt="" width="80" height="80"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="navbarTogglerDemo02">
+                    <li class="nav item active"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+                    <li class="nav item"><a class="nav-link" href="pages/recetips.html">Recetips</a></li>
+                    <li class="nav item"><a class="nav-link" href="pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li class="nav item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div> 
+        </nav>    
     </header>
     <section class="inicio">
         <div class="inicio__opacidad"></div>
         <div class="inicio__titulo">
             <h1>PURO - Smart Food</h1>
             <span class="inicioFrase">Empezá a comer sano<br>sin moverte de tu casa</span>
-            <a class="inicio__boton" href="pages/productos.html">VER PRODUCTOS</a>
+            <button class="btn btn-light"><a href="pages/productos.html">VER PRODUCTOS</a></button> <!-- MEJORAR ESTILO DEL BOTON -->
         </div>  
     </section> 
     <h2>Qué es PURO?</h2> 
-    <section class="descripcionPuro">
-        <div class="descripcionPuro__imagen">
+    <section class="row descripcionPuro">
+        <div class="col-md-6 col-sm-12 col-xs-12 descripcionPuro__imagen">
             <img class="animate__animated animate__backInLeft" src="recursos/queespuro.jpg" width="500" height="350" alt="queespuro">
         </div>
-        <div class="descripcionPuro__parrafo">
+        <div class="col-md-6 col-sm-12 col-xs-12 descripcionPuro__parrafo">
             <p class="animate__animated animate__backInRight">Algo PURO, según el diccionario, es algo que "no tiene mezcla de otra cosa o conserva su naturaleza original"; que "no posee sustancias sucias, contaminantes o elementos extraños perjudiciales". Eso, es PURO. Eso es lo que vendemos. Absolutamente todo los ingredientes que usamos tienen un porqué nutricional, comés lo que ves, no hay más que eso. Conocenos y empeza a alimentarte de verdad!</p>
         </div>
     </section>
     <h2>Cómo hago mi pedido?</h2>
-    <section class="infoInicio">
-        <div class="comoHagoMipedido">
+    <section class="infoInicio row">
+        <div class="col-md-3 col-sm-12 comoHagoMipedido">
             <i class="far fa-hand-point-up comoHagoMiPedido__iconos"></i>
             <h3>Elegí tus productos</h3>
         </div>
-        <div class="comoHagoMipedido">
+        <div class="col-md-3 col-sm-12 comoHagoMipedido">
             <i class="fab fa-whatsapp comoHagoMiPedido__iconos"></i>
             <h3>Hacé tu pedido al WSP</h3>
         </div>
-        <div class="comoHagoMipedido">
+        <div class="col-md-3 col-sm-12 comoHagoMipedido">
             <i class="fas fa-credit-card comoHagoMiPedido__iconos"></i>
             <h3>Pagá como quieras</h3>
         </div>
-        <div class="comoHagoMipedido">
+        <div class="col-md-3 col-sm-12 comoHagoMipedido">
             <i class="fas fa-shipping-fast comoHagoMiPedido__iconos"></i>
             <h3>Recibilo en tu casa</h3>
         </div>
@@ -75,26 +77,31 @@
         <a class="botonWsp__boton" href="https://web.whatsapp.com/" target="_blank" >HACE TU PEDIDO <i class="fab fa-whatsapp"></i></a>
     </div>
     <footer> 
-        <div class="footerDiv">
-            <h3>Enterate de nuestras promos</h3>
-            <div class="footerDiv__suscribite">
-                <input type="email" placeholder="Escriba aquí su email">
-                <button type="submit" class="btn btn-light">Suscribite</button>
+        <section class="row">
+            <div class="col-md-4 col-sm-12 footerDiv">
+                <h3>Enterate de nuestras promos</h3>
+                <div class="footerDiv__suscribite">
+                    <input type="email" placeholder="Escriba aquí su email">
+                    <button type="submit" class="btn btn-light">Suscribite</button>
+                </div>
             </div>
-        </div>
-        <div class="footerDiv"> <!-- FALTA REEMPLAZAR IMAGEN POR ICONOS --> 
-            <h3>Medios de Pago</h3>
-            <img src="https://w7.pngwing.com/pngs/32/363/png-transparent-visa-master-card-and-american-express-mastercard-payment-visa-credit-card-emv-credit-card-visa-and-master-card-background-text-display-advertising-logo.png" width="200" height="50" alt="">
-        </div>
-        <div class="footerDiv"> <!-- FALTA REEMPLAZAR IMAGEN POR ICONOS --> 
-            <h3>Seguinos en nuestras redes</h3>
-            <div>
-                <a href="https://www.instagram.com/puro.smartfood/" target="_blank" class="footerDiv__iconos"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/puro.smartfood" target="_blank" class="footerDiv__iconos"><i class="fab fa-facebook"></i></a>
-                <a href="https://web.whatsapp.com/" target="_blank" class="footerDiv__iconos"><i class="fab fa-whatsapp"></i></a>
+            <div class="col-md-4 col-sm-12 footerDiv">
+                <h3>Medios de Pago</h3>
+                <img src="https://w7.pngwing.com/pngs/32/363/png-transparent-visa-master-card-and-american-express-mastercard-payment-visa-credit-card-emv-credit-card-visa-and-master-card-background-text-display-advertising-logo.png" width="200" height="50" alt="">
             </div>
-        </div>
-        <p id="footerDerechos">Todos los derechos reservados. Powered by Emilia Aller Atucha</p>
+            <div class="col-md-4 col-sm-12 footerDiv">
+                <h3>Seguinos en nuestras redes</h3>
+                <div>
+                    <a href="https://www.instagram.com/puro.smartfood/" target="_blank" class="footerDiv__iconos"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/puro.smartfood" target="_blank" class="footerDiv__iconos"><i class="fab fa-facebook"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="footerDiv__iconos"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p class="col-md-12 col-sm-12">Todos los derechos reservados. Powered by Emilia Aller Atucha</p>
+        </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
