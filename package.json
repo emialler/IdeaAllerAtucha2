@@ -1,7 +1,6 @@
 {
   "name": "ideaalleratuchapruebanav",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
@@ -20,5 +19,7 @@
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }

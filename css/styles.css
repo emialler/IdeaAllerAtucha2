@@ -112,6 +112,10 @@ footer {
 
 /* FIN-FOOTER */
 /* INICIO-PAGINA INDEX */
+nav span {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif; }
+
 .inicio {
   margin-top: 100px;
   height: 500px;
@@ -124,10 +128,13 @@ footer {
   display: block; }
 
 .inicio__opacidad {
+  position: absolute;
+  margin-top: 150px;
   background-color: black;
-  opacity: 0.5;
-  height: 500px;
-  width: 100%; }
+  opacity: 0.3;
+  height: 200px;
+  width: 100%;
+  display: flex; }
 
 .inicio__titulo {
   height: 500px;
@@ -138,17 +145,12 @@ footer {
   flex-direction: column;
   justify-content: space-around; }
 
-h1 {
-  color: #e6e6e6;
-  font-size: 60px;
-  font-family: sans-serif;
-  font-weight: bold; }
-
 .inicioFrase {
+  position: absolute;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 50px;
-  color: #e6e6e6; }
+  color: white; }
 
 .inicio__boton {
   font-family: 'Open Sans', sans-serif;
