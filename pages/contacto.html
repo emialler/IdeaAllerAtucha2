@@ -28,7 +28,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse mr-auto" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="navbarTogglerDemo02">
-                    <li class="nav item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav item"><a class="nav-link" href="productos.html">Productos</a></li>
                     <li class="nav item"><a class="nav-link" href="recetips.html">Recetips</a></li>
                     <li class="nav item"><a class="nav-link" href="preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
@@ -85,34 +85,43 @@
                     </div>
                     <div class="form-group botonForm">
                         <input type="submit" class="btn btn-secondary" value="Enviar" class="form-control">
-                        <input type="reset"  class="btn btn-secondary" value="Limpiar formulario" class="form-control">
                     </div>
             </form>
         </section>
     </main>
     <footer> 
-        <section class="row">
-            <div class="col-md-4 col-sm-12 footerDiv">
-                <h3>Enterate de nuestras promos</h3>
-                <div class="footerDiv__suscribite">
-                    <input type="email" placeholder="Escriba aquí su email">
-                    <button type="submit" class="btn btn-light">Suscribite</button>
+        <div class="footerSecciones">
+            <h3 class="footerSecciones__titulo">Enterate de nuestras promos</h3>
+            <div class="footerSecciones__suscribite">
+                <input type="email" placeholder="Escriba aquí su email">
+                <button type="submit" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">Suscribite</button>
+            </div>
+        </div>
+        <div class="footerSecciones">
+            <h3 class="footerSecciones__titulo">Medios de Pago</h3>
+            <img src="https://w7.pngwing.com/pngs/32/363/png-transparent-visa-master-card-and-american-express-mastercard-payment-visa-credit-card-emv-credit-card-visa-and-master-card-background-text-display-advertising-logo.png" width="200" height="50" alt="">
+        </div>
+        <div class="footerSecciones">
+            <h3>Seguinos en nuestras redes</h3>
+            <div>
+                <a href="https://www.instagram.com/puro.smartfood/" target="_blank" class="footerDiv__iconos"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/puro.smartfood" target="_blank" class="footerDiv__iconos"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="footerDiv__iconos"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <p>Todos los derechos reservados. Powered by Emilia Aller Atucha</p>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Gracias por suscribirte!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  Vas a recibir nuestas promos semanales en tu email
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 footerDiv">
-                <h3>Medios de Pago</h3>
-                <img src="https://w7.pngwing.com/pngs/32/363/png-transparent-visa-master-card-and-american-express-mastercard-payment-visa-credit-card-emv-credit-card-visa-and-master-card-background-text-display-advertising-logo.png" width="200" height="50" alt="">
-            </div>
-            <div class="col-md-4 col-sm-12 footerDiv">
-                <h3>Seguinos en nuestras redes</h3>
-                <div>
-                    <a href="https://www.instagram.com/puro.smartfood/" target="_blank" class="footerDiv__iconos"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/puro.smartfood" target="_blank" class="footerDiv__iconos"><i class="fab fa-facebook"></i></a>
-                    <a href="https://web.whatsapp.com/" target="_blank" class="footerDiv__iconos"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <p class="col-md-12 col-sm-12">Todos los derechos reservados. Powered by Emilia Aller Atucha</p>
-        </section>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
