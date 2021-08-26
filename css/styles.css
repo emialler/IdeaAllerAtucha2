@@ -289,10 +289,15 @@ form {
   html {
     overflow-x: hidden; }
   .descripcionPuro {
-    width: 100vw; }
-    .descripcionPuro img {
-      width: 80vw;
-      height: auto; }
+    width: 100vw;
+    margin-right: auto; }
+    .descripcionPuro .descripcionPuro__imagen {
+      width: 100%;
+      padding: 10px; }
+      .descripcionPuro .descripcionPuro__imagen img {
+        width: 90%;
+        height: auto;
+        margin: 0; }
   /* .descripcionPuro {
         height: 800px;
     }
