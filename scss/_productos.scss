@@ -4,21 +4,38 @@
 
 .subtitulosProductos {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: $negrita;
     color: $color-fuente;
     text-align: center;
+    padding-top: 10px;
 }
 
 .ingredientes, .precio {
-    font-size: 16px;
-    color: gray;
-    font-family: $fuente;
+    font-size: 18px;
     color: $color-fuente;
+    font-family: $fuente;
     text-align: center;
+}
+
+.ingredientes {
+    font-weight: $normal;
+    padding: 0 15px;
+}
+
+.precio {
+    font-weight: $negrita;
 }
 
 .seccionProductos {
     margin: 0 10px;
+    background-color: $color-fondo;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* .seccionProductos {
