@@ -1,5 +1,16 @@
 $fuente: 'Poppins', sans-serif;
 $negrita: 500;
 $normal: 400;
-$color-fuente: #343a40;
-$color-fondo: #f5f3ec; 
+$gris-oscuro: #343a40;
+$gris-claro: #f5f3ec; 
+
+
+@mixin colores{
+    color: $gris-oscuro;
+    background-color: $gris-claro;
+}
+
+@mixin colores-reverse{
+    color: white;
+    background-color: $gris-oscuro;
+}

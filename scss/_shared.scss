@@ -12,7 +12,7 @@ html {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 /* FIN GENERAL */
@@ -43,7 +43,7 @@ nav span {
     font-size: 20px;
     font-family: $fuente;
     font-weight: $normal;
-    color: $color-fuente;
+    color: $gris-oscuro;
 }
 
 /* FIN-HEADER */
@@ -52,7 +52,7 @@ nav span {
 /* INICIO-FOOTER */
 
 footer {
-    background-color: $color-fuente;
+    @include colores-reverse;    /* MIXIN */
     width: 100%;
     margin-bottom: 0;
     display: flex;
@@ -61,7 +61,6 @@ footer {
     justify-content: center;
 
     p {
-        color: white;
         font-size: 16px;
         text-align: center;
         padding-top: 10px;
@@ -80,8 +79,8 @@ footer {
     
         a {
             font-size: 50px;
-            color: white;
             padding: 0 10px;
+            color: white;
 
             i:hover {
                 transform: scale(1.1);
@@ -89,7 +88,6 @@ footer {
         }
     
         h3 {
-            color: white;
             font-size: 20px;
             font-family: $fuente;
             text-align: center;
@@ -108,12 +106,11 @@ footer {
 /* SUBTITULOS COMPARTIDOS */
 
 .subtitulos {
+    @include colores-reverse;     /* MIXIN */
     margin: 25px 0;
 
     h2 {
         font-family: $fuente;
-        color: white;
-        background-color: $color-fuente;
         font-weight: $negrita;
         font-size: 28px;
         text-align: center;
@@ -122,3 +119,34 @@ footer {
 }
 
 /* FIN SUBTITULOS COMPARTIDOS */
+
+/* MEDIA QUERIES COMPARTIDAS */
+
+@media screen and (max-width: 768px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    nav span {
+        font-size: 16px;
+    }
+
+    .subtitulos {
+        margin: 25px 0;
+    
+        h2 {
+            font-family: $fuente;
+            font-weight: $negrita;
+            font-size: 20px;
+            text-align: center;
+            padding: 5px 0;
+        }
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
+
+/* FIN MEDIA QUERIES COMPARTIDAS */

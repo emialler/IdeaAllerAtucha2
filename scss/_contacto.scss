@@ -1,4 +1,5 @@
 @import "variables";
+@import "shared";
 
 /* INCIO-PAGINA CONTACTO */
 
@@ -7,23 +8,37 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;   
+
+    iframe {
+        width: 500px;
+        height: 400px;
+    }
+
+    .sectionContacto__info {
+        font-size: 20px;
+        font-family: $fuente;
+        font-weight: $normal;
+        color: $gris-oscuro;
+        text-align: center;
+        margin: 20px;
+    }
 }
 
-.sectionContacto__info {
-    font-size: 20px;
-    font-family: $fuente;
-    font-weight: $normal;
-    color: $color-fuente;
-    text-align: center;
-    margin: 20px;
+.sectionFormulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
-    background-color: $color-fondo;
-    padding: 1.5rem 2rem;
+    @include colores;          /* MIXIN */
+    padding: 10px 20px;
     border-radius: 5px;
     max-width: 90%;
     margin-bottom: 40px;
+    font-family: $fuente;
+    font-size: 16px;
+    font-weight: $normal;
 }
 
 .botonSubmit {
@@ -31,3 +46,34 @@ form {
 }
 
 /* FIN-PAGINA CONTACTO */
+
+
+@media screen and (max-width: 768px) {
+
+    .sectionContacto {
+        width: 100%;
+
+        iframe {
+            width: 300px;
+            height: 400px;
+        }
+
+        .sectionContacto__info {
+            font-size: 18px;
+            margin: 10px;
+            width: 80%;
+        }
+    }
+
+    .sectionFormulario {
+        width: 100%;
+        margin-bottom: 30px;
+
+        form {
+            font-size: 14px;
+            font-weight: $negrita;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+}

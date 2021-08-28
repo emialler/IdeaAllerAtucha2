@@ -1,32 +1,71 @@
 @import "variables";
+@import "shared";
 
 /* INICIO-PAGINA RECETIPS */
 
-.recetip {
+.recetip, .recetip-reverse {
+    @include colores;              /* MIXIN */
     display: flex;
     justify-content: center;
-}
+    align-content: center;
 
-.recetip-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
+    .recetip__img {
+        width: 40%;
+        margin: 30px 0;
+        justify-self: center;
 
-.recetip__img {
-    width: 40%;
-    justify-self: center;
-}
+        img {
+            width: 300px;
+            height: 400px;
+        }
+    }
 
-.recetip__p {
-    width: 40%;
-
-    p {
-        font-size: 20px;
-        font-family: $fuente;
-        font-weight: $normal;
-        color: $color-fuente;
+    .recetip__p {
+        width: 40%;
+        margin: 30px 0;
+    
+        p {
+            font-size: 20px;
+            font-family: $fuente;
+            font-weight: $normal;
+        }
     }
 }
 
+.recetip-reverse {
+    flex-direction: row-reverse;
+}
+
+
 /* FIN-PAGINA RECETIPS */
+
+
+/* MEDIA QUERIES RECETIPS */
+
+@media screen and (max-width: 768px) {
+
+    .recetip, .recetip-reverse {
+        display: flex;
+        flex-direction: column;
+
+        .recetip__img {
+            width: 90%;
+            margin: 20px;
+
+            img {
+                margin: 0 10px;
+                padding: 0;
+            }
+        }
+
+        .recetip__p{
+            width: 90%;
+            margin: 20px;
+
+            p {
+                text-align: center;
+                margin: 0 10px;
+            }
+        }
+    }
+}
