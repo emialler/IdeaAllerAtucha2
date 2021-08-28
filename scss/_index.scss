@@ -1,0 +1,149 @@
+@import "variables";
+
+/* INICIO-PAGINA INDEX */
+
+.inicio {
+    margin-top: 100px;
+    height: 500px;
+    background-image: url(../recursos/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    display: block;
+
+    .inicio__opacidad {
+        position: absolute;
+        margin-top: 150px;
+        background-color: white;
+        opacity: 0.5;
+        height: 200px;
+        width: 100%;
+    }
+    
+    p {
+        font-family: $fuente;
+        font-weight: 400;
+        font-size: 40px;
+        color: #343a40;
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+    }
+    
+    button {
+        font-family: $fuente;
+        display: block;
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translateY(-40%) translateX(-50%);
+        
+        a {
+            color: white;
+            font-family: $fuente;
+            font-weight: 400;
+        }       
+    }
+
+}
+
+.descripcionPuro {
+    margin: 0 20px 20px 20px;
+    background-color: #f5f3ec;
+
+    .descripcionPuro__imagen {
+        padding: 20px 0 20px 20px;
+    
+        img {
+            box-shadow: 4px 0 4px 0 #999;
+            margin-left: 30px;
+            margin-top: 20px;
+            width: 31rem;
+            height: auto;
+        }
+    }
+
+    .descripcionPuro__parrafo {
+        padding: 20px 20px 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    
+        p {
+            text-align: justify;
+            font-size: 20px;
+            font-family: $fuente;
+            color: $color-fuente;
+            font-weight: 400;
+            margin-right: 40px; 
+            margin-top: 20px;
+            line-height: 40px;
+        }
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+}
+
+.animate__animated .animate__backInRight {
+    animation-iteration-count: 1; 
+}
+
+.animate__animated .animate__backInLeft {
+    animation-iteration-count: 1;
+}
+
+.comoHagoMiPedido {
+    margin: 0 20px 20px 20px;
+    padding: 24px;
+    background-color: #f5f3ec;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    h3 {
+        color: $color-fuente;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: $fuente;
+        font-weight: 400;
+    }
+
+    .comoHagoMiPedido__iconos {
+        font-size: 5em;
+        padding-bottom: 2rem;
+        color: #343a40;
+    }
+    
+}
+
+.botonWsp {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: $fuente;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* FIN-PAGINA INDEX */

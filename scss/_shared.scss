@@ -1,0 +1,123 @@
+@import "variables";
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 100px;
+}
+
+/* FIN GENERAL */
+
+
+/* INICIO-HEADER */
+
+header, .navbar {
+    background-color: white;
+}
+
+.navbar-nav li {
+    padding: 0 1.5rem;
+    font-family: $fuente;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.navbar-nav li:hover {
+    transform: scale(1.3);
+}
+
+.navbar-brand:hover {
+    transform: scale(1.2);
+}
+
+nav span {
+    font-size: 20px;
+    font-family: $fuente;
+    color: $color-fuente;
+}
+
+/* FIN-HEADER */
+
+
+/* INICIO-FOOTER */
+
+footer {
+    background-color: #343a40;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+        font-family: $fuente;
+        font-weight: 200;
+    }
+
+    .footerSecciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 33%;
+        height: 80%;
+        padding-top: 20px;
+    
+        a {
+            font-size: 50px;
+            color: white;
+            padding: 0 10px;
+
+            i:hover {
+                transform: scale(1.1);
+            }
+        }
+    
+        h3 {
+            color: white;
+            font-size: 20px;
+            font-family: $fuente;
+            text-align: center;
+            font-weight: 400;
+        }
+    
+        .footerSecciones__titulo {
+            padding-bottom: 20px;
+        }
+    }    
+}
+
+/* FIN-FOOTER */
+
+
+/* SUBTITULOS COMPARTIDOS */
+
+.subtitulos {
+    margin: 25px 0;
+
+    h2 {
+        font-family: $fuente;
+        color: white;
+        background-color: #343a40;
+        font-weight: 400;
+        font-size: 28px;
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+/* FIN SUBTITULOS COMPARTIDOS */

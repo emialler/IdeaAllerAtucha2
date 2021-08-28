@@ -1,0 +1,30 @@
+@import "variables";
+
+/* INICIO-PAGINA RECETIPS */
+
+.recetip {
+    display: flex;
+    justify-content: center;
+}
+
+.recetip-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.recetip__img {
+    width: 40%;
+    justify-self: center;
+}
+
+.recetip__p {
+    width: 40%;
+
+    p {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+/* FIN-PAGINA RECETIPS */
