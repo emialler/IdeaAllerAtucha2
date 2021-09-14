@@ -1,33 +1,38 @@
 @import "variables";
-@import "shared";
 
 /* INICIO-PAGINA PRODUCTOS */
 
 .subtitulosProductos {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: $negrita;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .ingredientes, .precio {
-    font-size: 18px;
+    font-size: 1rem;
     font-family: $fuente;
     text-align: center;
 }
 
 .ingredientes {
     font-weight: $normal;
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 .precio {
     font-weight: $negrita;
+    border: 1px solid $gris-oscuro;
+    padding: 5px 10px;
 }
 
-.seccionProductos {
-    @include colores;      /* MIXIN */
+.seccionGranolas {
+    @include colores;
+    padding: 30px 20px;  
     margin: 0 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    box-shadow: 0px 10px 10px -6px gray;
 
     div {
         margin-top: 10px;
@@ -36,16 +41,34 @@
         justify-content: center;
         align-items: center;
     }
+
+    div:hover {
+        transform: scale(1.05);
+        transition: all 1.5s;
+    }
 }
 
-.imgBarras {
-    width: 500px;
-    height: 330px;
+.seccionMix {
+    @extend .seccionGranolas;
+
+    div {
+        width: 25%;
+        justify-content: flex-start;
+    }
 }
 
-.listaBarras {
-    list-style: none;
+.seccionBarras {
+    @extend .seccionMix;
+    margin-bottom: 50px;
 }
+
+.imgProductos {
+    height: 350px;
+    width: auto;
+    filter: drop-shadow(5px 5px 10px #444);
+}  
+
+
 
 /* FIN-PAGINA PRODUCTOS */
 
@@ -54,9 +77,13 @@
 
 @media screen and (max-width: 768px) {
 
-.imgBarras {
-    width: 320px;
-    height: auto;
-}
+    .seccionGranolas, .seccionMix, .seccionBarras {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
 
+        div {
+            width: 100%;
+        }
+    }
 }

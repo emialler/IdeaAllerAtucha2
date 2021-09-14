@@ -1,5 +1,4 @@
 @import "variables";
-@import "shared";
 
 /* INICIO-PAGINA PREGUNTAS FRECUENTES */
 
@@ -15,17 +14,17 @@
 
 .card-header {
     @include colores-reverse;     /* MIXIN */
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: $fuente;
     font-weight: $negrita;
 }
 
 .card-text {
-    font-size: 16px;
+    font-size: 1rem;
     color: $gris-oscuro;
 
     a {
-        color: black;
+        color: white;
     }   
 }
 
@@ -41,3 +40,5 @@
         margin-left: 20px;
     }
 }
+
+/* FIN MEDIA QUERIES PREGUNTAS FRECUENTES */

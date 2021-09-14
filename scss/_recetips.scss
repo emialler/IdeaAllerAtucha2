@@ -1,5 +1,4 @@
 @import "variables";
-@import "shared";
 
 /* INICIO-PAGINA RECETIPS */
 
@@ -25,7 +24,7 @@
         margin: 30px 0;
     
         p {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-family: $fuente;
             font-weight: $normal;
         }

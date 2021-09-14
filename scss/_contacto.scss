@@ -1,5 +1,4 @@
 @import "variables";
-@import "shared";
 
 /* INCIO-PAGINA CONTACTO */
 
@@ -15,7 +14,7 @@
     }
 
     .sectionContacto__info {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: $fuente;
         font-weight: $normal;
         color: $gris-oscuro;
@@ -37,12 +36,12 @@ form {
     max-width: 90%;
     margin-bottom: 40px;
     font-family: $fuente;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: $normal;
 }
 
 .botonSubmit {
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 /* FIN-PAGINA CONTACTO */
@@ -59,21 +58,34 @@ form {
         }
 
         .sectionContacto__info {
-            font-size: 18px;
+            font-size: 1.25rem;
             margin: 10px;
             width: 80%;
         }
     }
 
     .sectionFormulario {
+        
         width: 100%;
         margin-bottom: 30px;
 
         form {
-            font-size: 14px;
+            font-size: 1rem;
             font-weight: $negrita;
             padding: 10px;
             margin: 10px;
+        }
+
+        .form-group {
+
+            legend {
+                text-align: center;
+                font-size: 1.25rem;
+            }
+        }
+
+        .botonSubmit {
+            text-align: center;
         }
     }
 }
