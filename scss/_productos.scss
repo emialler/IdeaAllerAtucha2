@@ -3,7 +3,7 @@
 /* INICIO-PAGINA PRODUCTOS */
 
 .subtitulosProductos {
-    font-size: 1.5rem;
+    font-size: 1.4em;
     font-weight: $negrita;
     text-align: center;
     padding-top: 15px;
@@ -17,13 +17,14 @@
 
 .ingredientes {
     font-weight: $normal;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 .precio {
     font-weight: $negrita;
     border: 1px solid $gris-oscuro;
     padding: 5px 10px;
+    margin: 0 10px;
 }
 
 .seccionGranolas {
@@ -38,8 +39,14 @@
         margin-top: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: center; 
+
+        .imgGranolas {
+            max-width: 50%;
+            height: auto;
+            filter: drop-shadow(5px 5px 10px #444);
+        } 
     }
 
     div:hover {
@@ -58,11 +65,10 @@
 }
 
 .imgProductos {
-    height: 350px;
-    width: auto;
+    max-width: 70%;
+    height: auto;
     filter: drop-shadow(5px 5px 10px #444);
 }  
-
 
 
 /* FIN-PAGINA PRODUCTOS */
@@ -70,7 +76,7 @@
 /* MEDIA QUERIES PRODUCTOS */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     .seccionGranolas, .seccionMix, .seccionBarras {
         display: flex;

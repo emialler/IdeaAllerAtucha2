@@ -15,23 +15,22 @@ main {
 header, .navbar {
   background-color: white; }
 
-.navbar-nav li {
-  padding: 0 24px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 500; }
-
 .navbar {
   box-shadow: 0px 0px 40px gray; }
-
-.navbar-nav li a:hover {
-  transform: scale(1.1);
-  border-bottom: 3px solid #343a40;
-  transition: all 0.5s; }
-
-.navbar-brand:hover {
-  transform: scale(1.1);
-  transition: all 0.5s; }
+  .navbar .navbar-nav li {
+    padding: 0 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500; }
+    .navbar .navbar-nav li .active {
+      border-bottom: 3px solid #343a40; }
+    .navbar .navbar-nav li .navbar-nav li a:hover {
+      transform: scale(1.1);
+      border-bottom: 3px solid #343a40;
+      transition: all 0.5s; }
+  .navbar .navbar-brand:hover {
+    transform: scale(1.1);
+    transition: all 0.5s; }
 
 nav span {
   font-size: 1.25rem;
@@ -39,39 +38,11 @@ nav span {
   font-weight: 400;
   color: #343a40; }
 
-.active {
-  border-bottom: 3px solid #343a40; }
-
 /* FIN-HEADER */
-/* BOTONES */
-.btn {
-  box-shadow: 0px 10px 10px -6px gray; }
-  .btn a {
-    font-family: "Poppins", sans-serif;
-    color: white;
-    text-decoration: none; }
-
-.btn:hover {
-  transform: scale(1.1); }
-
-.botonWsp {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  border-color: #1ad03f; }
-  .botonWsp a i {
-    font-size: 3.5rem; }
-  .botonWsp .btn {
-    background-color: #1ad03f;
-    border-color: #1ad03f;
-    border-radius: 50%; }
-
-/* BOTONES */
 /* INICIO-FOOTER */
 footer {
   color: white;
   background-color: #343a40;
-  /* MIXIN */
   width: 100%;
   margin-bottom: 0;
   display: flex;
@@ -159,34 +130,40 @@ footer {
 /* FIN MEDIA QUERIES COMPARTIDAS */
 /* INICIO-PAGINA RECETIPS */
 .recetip, .recetip-reverse {
-  color: #343a40;
-  background-color: #f5f3ec;
-  /* MIXIN */
+  justify-content: space-around;
+  align-items: center;
   font-family: "Poppins", sans-serif; }
   .recetip .recetip__img, .recetip-reverse .recetip__img {
-    width: 50%; }
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap; }
     .recetip .recetip__img img, .recetip-reverse .recetip__img img {
-      height: 400px;
-      width: auto;
-      filter: drop-shadow(5px 5px 10px #444); }
+      width: 25%;
+      height: auto;
+      filter: drop-shadow(5px 5px 10px #444);
+      margin: auto; }
   .recetip .recetip__p, .recetip-reverse .recetip__p {
-    width: 40%; }
+    width: 40%;
+    padding: 20px 30px 20px 0; }
     .recetip .recetip__p h4, .recetip-reverse .recetip__p h4 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 500;
       padding: 20px 0;
       text-align: center; }
     .recetip .recetip__p li, .recetip-reverse .recetip__p li {
       font-size: 1.1rem;
-      padding: 20px 0;
+      padding: 15px 0;
       text-align: center; }
 
 .recetip-reverse {
   flex-direction: row-reverse; }
 
+.recetip-reverse .recetip__p {
+  padding: 20px 0 20px 40px; }
+
 /* FIN-PAGINA RECETIPS */
 /* MEDIA QUERIES RECETIPS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .recetip, .recetip-reverse {
     display: flex;
     flex-direction: column;
@@ -197,7 +174,7 @@ footer {
       width: 100%;
       margin: 10px; }
       .recetip .recetip__img img, .recetip-reverse .recetip__img img {
-        width: 90%;
+        max-width: 80%;
         height: auto;
         margin: 5px 5px 0 5px; }
     .recetip .recetip__p, .recetip-reverse .recetip__p {
@@ -212,7 +189,7 @@ footer {
 
 /* INICIO-PAGINA PRODUCTOS */
 .subtitulosProductos {
-  font-size: 1.5rem;
+  font-size: 1.4em;
   font-weight: 500;
   text-align: center;
   padding-top: 15px; }
@@ -224,12 +201,13 @@ footer {
 
 .ingredientes {
   font-weight: 400;
-  padding: 0 5px; }
+  padding: 0 10px; }
 
 .precio {
   font-weight: 500;
   border: 1px solid #343a40;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  margin: 0 10px; }
 
 .seccionGranolas, .recetip, .recetip-reverse, .seccionMix, .seccionBarras {
   color: #343a40;
@@ -243,8 +221,12 @@ footer {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; }
+    .seccionGranolas div .imgGranolas, .recetip div .imgGranolas, .recetip-reverse div .imgGranolas, .seccionMix div .imgGranolas, .seccionBarras div .imgGranolas {
+      max-width: 50%;
+      height: auto;
+      filter: drop-shadow(5px 5px 10px #444); }
   .seccionGranolas div:hover, .recetip div:hover, .recetip-reverse div:hover, .seccionMix div:hover, .seccionBarras div:hover {
     transform: scale(1.05);
     transition: all 1.5s; }
@@ -254,13 +236,13 @@ footer {
   justify-content: flex-start; }
 
 .imgProductos {
-  height: 350px;
-  width: auto;
+  max-width: 70%;
+  height: auto;
   filter: drop-shadow(5px 5px 10px #444); }
 
 /* FIN-PAGINA PRODUCTOS */
 /* MEDIA QUERIES PRODUCTOS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .seccionGranolas, .recetip, .recetip-reverse, .seccionMix, .seccionBarras, .seccionMix, .seccionBarras {
     display: flex;
     flex-direction: column;
@@ -271,42 +253,61 @@ footer {
       transform: scale(1); } }
 
 /* INICIO-PAGINA PREGUNTAS FRECUENTES */
-.sectionPreguntas {
-  margin-top: 120px;
-  max-width: 90%;
+.mainPreguntas {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 50px;
-  margin-bottom: 50px; }
-
-.card-header {
-  color: white;
-  background-color: #343a40;
-  /* MIXIN */
-  font-size: 1.25rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500; }
-
-.card-text {
-  font-size: 1rem;
-  color: #343a40; }
-  .card-text a {
-    color: white; }
+  flex-wrap: nowrap;
+  margin-top: 120px;
+  justify-content: space-around; }
+  .mainPreguntas .sectionPreguntas {
+    margin-top: 20px;
+    width: 50%;
+    font-family: "Poppins", sans-serif; }
+    .mainPreguntas .sectionPreguntas .card-header {
+      background-color: #f5f3ec;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      filter: drop-shadow(5px 5px 10px rgba(68, 68, 68, 0.24)); }
+      .mainPreguntas .sectionPreguntas .card-header .btn {
+        color: #343a40;
+        text-decoration: none;
+        font-size: 1rem; }
+    .mainPreguntas .sectionPreguntas .card-body {
+      font-size: 1em;
+      color: #343a40; }
+      .mainPreguntas .sectionPreguntas .card-body .btn {
+        background-color: #f5f3ec; }
+      .mainPreguntas .sectionPreguntas .card-body a {
+        color: #343a40; }
+  .mainPreguntas .sectionCarousel {
+    width: 40%;
+    margin-top: 20px; }
+    .mainPreguntas .sectionCarousel .carousel {
+      filter: drop-shadow(5px 5px 10px #444); }
 
 /* FIN-PAGINA PREGUNTAS FRECUENTES */
 /* MEDIA QUERIES PREGUNTAS FRECUENTES */
 @media screen and (max-width: 768px) {
-  .sectionPreguntas {
-    margin-right: 20px;
-    margin-left: 20px; } }
+  .mainPreguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .mainPreguntas .sectionPreguntas {
+      width: 90%; }
+      .mainPreguntas .sectionPreguntas .card-header {
+        padding: 5px; }
+        .mainPreguntas .sectionPreguntas .card-header .btn {
+          font-weight: 500;
+          padding: 10px 0 10px 0; }
+    .mainPreguntas .sectionCarousel {
+      width: 90%; } }
 
 /* FIN MEDIA QUERIES PREGUNTAS FRECUENTES */
 /* INICIO-PAGINA INDEX */
 .inicio {
   margin-top: 100px;
   height: 500px;
-  background-image: url(../recursos/fondo.jpg);
+  background-image: url(../images/fondo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -336,33 +337,34 @@ footer {
     .inicio .inicio__info button:hover {
       transform: scale(1.1); }
 
-.descripcionPuro, .comoHagoMiPedido {
+.descripcionPuro {
+  display: flex;
   margin: 0 20px 20px 20px;
+  padding: 30px;
   color: #343a40;
   background-color: #f5f3ec;
   box-shadow: 0px 10px 10px -6px gray;
   /* INCLUYO MIXIN */ }
-  .descripcionPuro .descripcionPuro__imagen, .comoHagoMiPedido .descripcionPuro__imagen {
-    padding: 15px 0 20px 20px; }
-    .descripcionPuro .descripcionPuro__imagen img, .comoHagoMiPedido .descripcionPuro__imagen img {
-      box-shadow: 0px 10px 10px -6px gray;
-      margin-left: 30px;
-      margin-top: 15px;
-      width: 500px;
-      height: auto; }
-  .descripcionPuro .descripcionPuro__parrafo, .comoHagoMiPedido .descripcionPuro__parrafo {
-    padding: 20px 20px 20px 0;
+  .descripcionPuro .descripcionPuro__imagen {
+    width: 50%; }
+    .descripcionPuro .descripcionPuro__imagen img {
+      filter: drop-shadow(5px 5px 10px #444);
+      max-width: 80%;
+      height: auto;
+      text-align: center;
+      display: block;
+      margin: auto; }
+  .descripcionPuro .descripcionPuro__parrafo {
+    width: 50%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }
-    .descripcionPuro .descripcionPuro__parrafo p, .comoHagoMiPedido .descripcionPuro__parrafo p {
-      text-align: justify;
-      font-size: 1.25rem;
+    .descripcionPuro .descripcionPuro__parrafo p {
+      font-size: 1.2em;
       font-family: "Poppins", sans-serif;
       font-weight: 500;
-      margin-right: 40px;
-      margin-top: 20px;
       line-height: 40px; }
 
 .animate__animated .animate__fadeInLeftBig {
@@ -378,67 +380,105 @@ footer {
   animation-iteration-count: 1; }
 
 .comoHagoMiPedido {
-  /* APLICO EXTEND */
-  padding: 24px;
+  color: #343a40;
+  background-color: #f5f3ec;
+  box-shadow: 0px 10px 10px -6px gray;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 50px; }
-  .comoHagoMiPedido div {
+  padding: 30px;
+  margin: 0 20px 20px 20px; }
+  .comoHagoMiPedido .comoHagoMiPedido__iconos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 0 10px; }
   .comoHagoMiPedido h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4em;
     font-family: "Poppins", sans-serif;
     font-weight: 500; }
-  .comoHagoMiPedido .comoHagoMiPedido__iconos {
-    font-size: 5rem;
-    padding-bottom: 2rem; }
+  .comoHagoMiPedido .iconos {
+    font-size: 5em;
+    padding-bottom: 20px; }
 
+/* INICIO BOTONES INDEX */
+.botonIndex {
+  box-shadow: 0px 10px 10px -6px gray; }
+  .botonIndex a {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none; }
+
+.botonIndex:hover {
+  transform: scale(1.1); }
+
+.botonWsp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-color: #1ad03f; }
+  .botonWsp a i {
+    font-size: 3.5rem; }
+  .botonWsp .btn {
+    background-color: #1ad03f;
+    border-color: #1ad03f;
+    border-radius: 50%; }
+
+/* FIN BOTONES INDEX */
 /* FIN-PAGINA INDEX */
 /* INICIO MEDIA QUERIES INDEX */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .inicio .inicio__info p {
-    font-size: 1.8rem; }
-  .descripcionPuro, .comoHagoMiPedido {
+    font-size: 1.5em; }
+  .descripcionPuro {
     width: 90%;
-    margin: 0 20px; }
-    .descripcionPuro .descripcionPuro__imagen, .comoHagoMiPedido .descripcionPuro__imagen {
-      margin: 5px 5px 0 5px; }
-      .descripcionPuro .descripcionPuro__imagen img, .comoHagoMiPedido .descripcionPuro__imagen img {
-        width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; }
+    .descripcionPuro .descripcionPuro__imagen {
+      width: 100%; }
+      .descripcionPuro .descripcionPuro__imagen img {
+        width: 100%;
         height: auto;
-        margin: 5px 5px 0 5px; }
-    .descripcionPuro .descripcionPuro__parrafo, .comoHagoMiPedido .descripcionPuro__parrafo {
-      margin: 10px;
-      padding: 0;
+        display: block;
+        margin: auto; }
+    .descripcionPuro .descripcionPuro__parrafo {
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
-      .descripcionPuro .descripcionPuro__parrafo p, .comoHagoMiPedido .descripcionPuro__parrafo p {
+      .descripcionPuro .descripcionPuro__parrafo p {
         text-align: center;
-        font-size: 1.25rem;
+        font-size: 1em;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-        line-height: 1.8rem;
-        margin: 0;
-        padding: 0 10px 10px 10px; }
-      .descripcionPuro .descripcionPuro__parrafo button, .comoHagoMiPedido .descripcionPuro__parrafo button {
+        line-height: 1.5em;
+        padding-top: 20px; }
+      .descripcionPuro .descripcionPuro__parrafo button {
         margin: 5px 0; }
-  .comoHagoMiPedido h3 {
-    font-size: 1.25rem; }
-  .comoHagoMiPedido div {
-    margin: 5px 0; }
-  .comoHagoMiPedido .comoHagoMiPedido__iconos {
-    font-size: 4rem; } }
+  .comoHagoMiPedido {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around; }
+    .comoHagoMiPedido h3 {
+      font-size: 1.2em; }
+    .comoHagoMiPedido div {
+      padding: 5px 0 10px 0; }
+    .comoHagoMiPedido .comoHagoMiPedido__iconos {
+      font-size: 4em; } }
 
 /* FIN MEDIA QUERIES INDEX */
 /* INCIO-PAGINA CONTACTO */
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; }
+
 .sectionContacto {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -447,14 +487,19 @@ footer {
     width: 500px;
     height: 400px; }
   .sectionContacto .sectionContacto__info {
-    font-size: 1.25rem;
+    font-size: 1.2em;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #343a40;
     text-align: center;
     margin: 20px; }
+    .sectionContacto .sectionContacto__info i {
+      padding-right: 10px;
+      color: #343a40; }
 
 .sectionFormulario {
+  margin-top: 20px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -462,28 +507,30 @@ footer {
 form {
   color: #343a40;
   background-color: #f5f3ec;
-  /* MIXIN */
   padding: 10px 20px;
   border-radius: 5px;
   max-width: 90%;
   margin-bottom: 40px;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 400; }
 
 .botonSubmit {
   margin-top: 16px; }
 
 /* FIN-PAGINA CONTACTO */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  .contacto {
+    display: flex;
+    flex-direction: column; }
   .sectionContacto {
     width: 100%; }
     .sectionContacto iframe {
       width: 300px;
       height: 400px; }
     .sectionContacto .sectionContacto__info {
-      font-size: 1.25rem;
-      margin: 10px;
+      font-size: 1.2rem;
+      margin: 10px 0;
       width: 80%; }
   .sectionFormulario {
     width: 100%;

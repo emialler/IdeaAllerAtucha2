@@ -2,31 +2,54 @@
 
 /* INICIO-PAGINA PREGUNTAS FRECUENTES */
 
-.sectionPreguntas {
-    margin-top: 120px;
-    max-width: 90%;
+.mainPreguntas {
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 120px;
     justify-content: space-around;
-    margin-left: 50px;
-    margin-bottom: 50px;
+
+    .sectionPreguntas {
+        margin-top: 20px;
+        width: 50%;
+        font-family: $fuente;
+    
+        .card-header {
+            background-color: $gris-claro;
+            font-family: $fuente;
+            font-weight: $negrita;
+            filter: drop-shadow(5px 5px 10px rgba(68, 68, 68, 0.24));
+        
+            .btn {
+                color: $gris-oscuro;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+        }
+        
+        .card-body {
+            font-size: 1em;
+            color: $gris-oscuro;
+        
+            .btn {
+                background-color: $gris-claro;
+            }
+    
+            a {
+                color: $gris-oscuro;
+            }   
+        }
+    }
+    
+    .sectionCarousel {
+        width: 40%;
+        margin-top: 20px;
+        
+        .carousel {
+            filter: drop-shadow(5px 5px 10px #444);
+        }
+    }
 }
 
-.card-header {
-    @include colores-reverse;     /* MIXIN */
-    font-size: 1.25rem;
-    font-family: $fuente;
-    font-weight: $negrita;
-}
-
-.card-text {
-    font-size: 1rem;
-    color: $gris-oscuro;
-
-    a {
-        color: white;
-    }   
-}
 
 /* FIN-PAGINA PREGUNTAS FRECUENTES */
 
@@ -35,10 +58,30 @@
 
 @media screen and (max-width: 768px) {
 
-    .sectionPreguntas {
-        margin-right: 20px;
-        margin-left: 20px;
+    .mainPreguntas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .sectionPreguntas {
+            width: 90%;
+
+            .card-header {
+                padding: 5px;
+                
+                .btn {
+                    font-weight: $negrita;
+                    padding: 10px 0 10px 0;
+                }
+            }
+        }
+
+        .sectionCarousel {
+            width: 90%;
+        }
     }
+
 }
 
 /* FIN MEDIA QUERIES PREGUNTAS FRECUENTES */
