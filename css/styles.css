@@ -76,7 +76,8 @@ footer {
       padding: 0 10px;
       color: white; }
       footer .footerSecciones a i:hover {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        transition: all 0.5s; }
     footer .footerSecciones h3 {
       font-size: 1.2rem;
       font-family: "Poppins", sans-serif;
@@ -184,11 +185,11 @@ footer {
     .recetip .recetip__p h4, .recetip-reverse .recetip__p h4 {
       font-size: 1.4rem;
       font-weight: 500;
-      padding: 20px 0;
+      padding: 15px 0;
       text-align: center; }
     .recetip .recetip__p li, .recetip-reverse .recetip__p li {
       font-size: 1.1rem;
-      padding: 15px 0;
+      padding: 10px 0;
       text-align: center; }
 
 .recetip-reverse {
@@ -243,14 +244,14 @@ footer {
 .precio {
   font-weight: 500;
   font-size: 1rem;
-  border: 1px solid #343a40;
   padding: 5px 10px;
-  box-sizing: border-box; }
+  border: 1px solid #343a40;
+  margin: 10px 0 15px 0; }
 
 .seccionGranolas, .recetip, .recetip-reverse, .seccionMix, .seccionBarras {
   color: #343a40;
   background-color: #f5f3ec;
-  padding: 30px 20px;
+  padding: 20px;
   margin: 0 20px;
   display: flex;
   flex-wrap: nowrap;
@@ -267,7 +268,7 @@ footer {
       filter: drop-shadow(5px 5px 10px #444); }
   .seccionGranolas div:hover, .recetip div:hover, .recetip-reverse div:hover, .seccionMix div:hover, .seccionBarras div:hover {
     transform: scale(1.05);
-    transition: all 1.5s; }
+    transition: all 0.5s; }
 
 .seccionMix div, .seccionBarras div {
   width: 25%;
@@ -292,9 +293,11 @@ footer {
   .ingredientes {
     padding: 0;
     margin: 0; }
-  .precio {
-    padding: 5px;
-    margin: 10px 0 10px 0; } }
+  .contenedorPrecio {
+    width: 100%; }
+    .contenedorPrecio .precio {
+      padding: 5px;
+      margin: 10px 0 10px 0; } }
 
 /* INICIO-PAGINA PREGUNTAS FRECUENTES */
 .mainPreguntas {
@@ -379,7 +382,7 @@ footer {
     .inicio .inicio__info p {
       font-family: "Poppins", sans-serif;
       font-weight: 500;
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       color: #343a40; }
     .inicio .inicio__info .btn {
       box-shadow: 0px 10px 10px -6px gray; }
@@ -387,8 +390,6 @@ footer {
         font-family: "Poppins", sans-serif;
         color: white;
         text-decoration: none; }
-    .inicio .inicio__info .btn:hover {
-      transform: scale(1.1); }
 
 .descripcionPuro {
   display: flex;
@@ -424,16 +425,7 @@ footer {
         color: white;
         text-decoration: none; }
 
-.animate__animated .animate__fadeInLeftBig {
-  animation-iteration-count: 1; }
-
-.animate__animated .animate__fadeInRightBig {
-  animation-iteration-count: 1; }
-
-.animate__animated .animate__backInRight {
-  animation-iteration-count: 1; }
-
-.animate__animated .animate__backInLeft {
+.animate__animated .animate__fadeInUpBig {
   animation-iteration-count: 1; }
 
 .comoHagoMiPedido {
