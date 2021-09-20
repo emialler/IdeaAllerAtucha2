@@ -75,6 +75,10 @@
                     font-weight: $negrita;
                     padding: 10px 0 10px 0;
                 }
+
+                .btn:hover {
+                    transform: scale(1);
+                }
             }
         }
 

@@ -5,26 +5,26 @@
 .subtitulosProductos {
     font-size: 1.4rem;
     font-weight: $negrita;
-    text-align: center;
+    margin: auto;
     padding-top: 15px;
 }
 
-.ingredientes, .precio {
-    font-size: 1rem;
-    font-family: $fuente;
-    text-align: center;
-}
-
 .ingredientes {
+    font-family: $fuente;
     font-weight: $normal;
-    padding: 0 10px;
+    font-size: 1rem;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+     
 }
 
 .precio {
+    font-family: $fuente;
     font-weight: $negrita;
+    font-size: 1rem;
     border: 1px solid $gris-oscuro;
     padding: 5px 10px;
-    margin: 0 10px;
+    margin: auto;
 }
 
 .seccionGranolas {

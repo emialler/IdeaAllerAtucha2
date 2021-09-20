@@ -218,23 +218,23 @@ footer {
 .subtitulosProductos {
   font-size: 1.4rem;
   font-weight: 500;
-  text-align: center;
+  margin: auto;
   padding-top: 15px; }
 
-.ingredientes, .precio {
-  font-size: 1rem;
+.ingredientes {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px 10px 0 10px;
   text-align: center; }
 
-.ingredientes {
-  font-weight: 400;
-  padding: 0 10px; }
-
 .precio {
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 1rem;
   border: 1px solid #343a40;
   padding: 5px 10px;
-  margin: 0 10px; }
+  margin: auto; }
 
 .seccionGranolas, .recetip, .recetip-reverse, .seccionMix, .seccionBarras {
   color: #343a40;
@@ -333,6 +333,8 @@ footer {
         .mainPreguntas .sectionPreguntas .card-header .btn {
           font-weight: 500;
           padding: 10px 0 10px 0; }
+        .mainPreguntas .sectionPreguntas .card-header .btn:hover {
+          transform: scale(1); }
     .mainPreguntas .sectionCarousel {
       width: 90%; } }
 
