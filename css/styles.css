@@ -85,12 +85,15 @@ footer {
       font-weight: 400;
       padding-top: 20px;
       line-height: 30px; }
-  footer .modal-title, footer .modal-body {
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-    color: #343a40; }
 
 /* FIN-FOOTER */
+/* MODAL */
+.modal-title, .modal-body {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #343a40; }
+
+/* FIN MODAL */
 /* SUBTITULOS COMPARTIDOS */
 .subtitulos {
   color: white;
@@ -118,7 +121,7 @@ footer {
     background-color: #1ad03f;
     border-color: #1ad03f;
     border-radius: 50%;
-    box-shadow: 0px 10px 10px -6px gray; }
+    filter: drop-shadow(5px 5px 10px #2c2c2c); }
 
 .btn:hover {
   transform: scale(1.1);

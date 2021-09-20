@@ -121,16 +121,19 @@ footer {
             line-height: 30px;
         }
     }    
-
-    .modal-title, .modal-body {
-        font-size: 1rem;
-        font-family: $fuente;
-        color: $gris-oscuro;
-    }
 }
 
 /* FIN-FOOTER */
 
+/* MODAL */
+
+.modal-title, .modal-body {
+    font-size: 1rem;
+    font-family: $fuente;
+    color: $gris-oscuro;
+}
+
+/* FIN MODAL */
 
 /* SUBTITULOS COMPARTIDOS */
 
@@ -169,7 +172,7 @@ footer {
         background-color: #1ad03f;
         border-color: #1ad03f;
         border-radius: 50%;
-        box-shadow: 0px 10px 10px -6px gray;
+        filter: drop-shadow(5px 5px 10px rgb(44, 44, 44));
     }
 }
 
