@@ -221,6 +221,21 @@ footer {
 
         .footerSecciones {
             width: 100%;
+
+            #suscribirse {
+                padding-bottom: 10px;
+            }
+
+            .footerSecciones__suscribite {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .btn {
+                    margin-top: 10px;
+                }
+            }
         }
 
         p {

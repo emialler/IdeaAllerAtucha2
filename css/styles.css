@@ -151,6 +151,15 @@ footer {
     flex-direction: column; }
     footer .footerSecciones {
       width: 100%; }
+      footer .footerSecciones #suscribirse {
+        padding-bottom: 10px; }
+      footer .footerSecciones .footerSecciones__suscribite {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        footer .footerSecciones .footerSecciones__suscribite .btn {
+          margin-top: 10px; }
     footer p {
       font-size: 0.8rem; } }
 
@@ -215,26 +224,28 @@ footer {
         padding: 10px 0; } }
 
 /* INICIO-PAGINA PRODUCTOS */
+.subtitulosProductos, .ingredientes, .precio {
+  font-family: "Poppins", sans-serif;
+  text-align: center; }
+
 .subtitulosProductos {
   font-size: 1.4rem;
   font-weight: 500;
-  margin: auto;
-  padding-top: 15px; }
+  padding-top: 15px;
+  width: 100%; }
 
 .ingredientes {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   padding: 10px 10px 0 10px;
-  text-align: center; }
+  width: 100%; }
 
 .precio {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   border: 1px solid #343a40;
   padding: 5px 10px;
-  margin: auto; }
+  box-sizing: border-box; }
 
 .seccionGranolas, .recetip, .recetip-reverse, .seccionMix, .seccionBarras {
   color: #343a40;
@@ -485,7 +496,8 @@ footer {
     flex-direction: column;
     align-items: space-around; }
     .comoHagoMiPedido h3 {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      padding-bottom: 15px; }
     .comoHagoMiPedido div {
       padding: 5px 0 10px 0; }
     .comoHagoMiPedido .comoHagoMiPedido__iconos {

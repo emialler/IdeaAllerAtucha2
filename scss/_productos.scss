@@ -2,29 +2,31 @@
 
 /* INICIO-PAGINA PRODUCTOS */
 
+.subtitulosProductos, .ingredientes, .precio {
+    font-family: $fuente;
+    text-align: center;
+}
+
 .subtitulosProductos {
     font-size: 1.4rem;
     font-weight: $negrita;
-    margin: auto;
     padding-top: 15px;
+    width: 100%;
 }
 
 .ingredientes {
-    font-family: $fuente;
     font-weight: $normal;
     font-size: 1rem;
-    padding: 10px 10px 0 10px;
-    text-align: center;
-     
+    padding: 10px 10px 0 10px;  
+    width: 100%;   
 }
 
 .precio {
-    font-family: $fuente;
     font-weight: $negrita;
     font-size: 1rem;
     border: 1px solid $gris-oscuro;
     padding: 5px 10px;
-    margin: auto;
+    box-sizing: border-box;
 }
 
 .seccionGranolas {
