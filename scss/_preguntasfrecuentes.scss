@@ -15,19 +15,19 @@
     
         .card-header {
             background-color: $gris-claro;
-            font-family: $fuente;
-            font-weight: $negrita;
             filter: drop-shadow(5px 5px 10px rgba(68, 68, 68, 0.24));
         
             .btn {
+                font-family: $fuente;
                 color: $gris-oscuro;
                 text-decoration: none;
                 font-size: 1rem;
+                font-weight: $negrita;
             }
         }
         
         .card-body {
-            font-size: 1em;
+            font-size: 1rem;
             color: $gris-oscuro;
         
             .btn {
@@ -36,6 +36,7 @@
     
             a {
                 color: $gris-oscuro;
+                text-decoration: none;
             }   
         }
     }
@@ -81,7 +82,6 @@
             width: 90%;
         }
     }
-
 }
 
 /* FIN MEDIA QUERIES PREGUNTAS FRECUENTES */

@@ -24,13 +24,14 @@ header, .navbar {
     font-weight: 500; }
     .navbar .navbar-nav li .active {
       border-bottom: 3px solid #343a40; }
-    .navbar .navbar-nav li .navbar-nav li a:hover {
-      transform: scale(1.1);
-      border-bottom: 3px solid #343a40;
-      transition: all 0.5s; }
   .navbar .navbar-brand:hover {
     transform: scale(1.1);
     transition: all 0.5s; }
+
+.navbar-nav li a:hover {
+  transform: scale(1.1);
+  border-bottom: 3px solid #343a40;
+  transition: all 0.5s; }
 
 nav span {
   font-size: 1.25rem;
@@ -64,7 +65,12 @@ footer {
     justify-content: center;
     width: 33%;
     height: 80%;
-    padding-top: 20px; }
+    font-family: "Poppins", sans-serif; }
+    footer .footerSecciones #suscribirse {
+      padding-bottom: 30px; }
+    footer .footerSecciones img {
+      width: 40%;
+      height: auto; }
     footer .footerSecciones a {
       font-size: 3rem;
       padding: 0 10px;
@@ -72,12 +78,12 @@ footer {
       footer .footerSecciones a i:hover {
         transform: scale(1.1); }
     footer .footerSecciones h3 {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-family: "Poppins", sans-serif;
       text-align: center;
-      font-weight: 400; }
-    footer .footerSecciones .footerSecciones__titulo {
-      padding-bottom: 20px; }
+      font-weight: 400;
+      padding-top: 20px;
+      line-height: 30px; }
   footer .modal-title, footer .modal-body {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
@@ -88,7 +94,6 @@ footer {
 .subtitulos {
   color: white;
   background-color: #343a40;
-  /* MIXIN */
   margin: 25px 0;
   box-shadow: 0px 10px 10px -6px gray; }
   .subtitulos h2 {
@@ -99,6 +104,26 @@ footer {
     padding: 5px 0; }
 
 /* FIN SUBTITULOS COMPARTIDOS */
+/* BOTONES COMPARTIDOS */
+.botonWsp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-color: #1ad03f; }
+  .botonWsp a i {
+    font-size: 3.5rem;
+    color: white; }
+  .botonWsp .btn {
+    background-color: #1ad03f;
+    border-color: #1ad03f;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px -6px gray; }
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.5s; }
+
+/* FIN BOTONES COMPARTIDOS */
 /* MEDIA QUERIES COMPARTIDAS */
 @media screen and (max-width: 768px) {
   html {
@@ -117,15 +142,17 @@ footer {
     .subtitulos h2 {
       font-family: "Poppins", sans-serif;
       font-weight: 500;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       text-align: center;
-      padding: 5px 0; }
+      padding: 8px 0; }
   footer {
     margin-top: 40px;
     display: flex;
     flex-direction: column; }
     footer .footerSecciones {
-      width: 100%; } }
+      width: 100%; }
+    footer p {
+      font-size: 0.8rem; } }
 
 /* FIN MEDIA QUERIES COMPARTIDAS */
 /* INICIO-PAGINA RECETIPS */
@@ -134,11 +161,11 @@ footer {
   align-items: center;
   font-family: "Poppins", sans-serif; }
   .recetip .recetip__img, .recetip-reverse .recetip__img {
-    width: 60%;
+    width: 50%;
     display: flex;
-    flex-wrap: nowrap; }
+    flex-direction: row; }
     .recetip .recetip__img img, .recetip-reverse .recetip__img img {
-      width: 25%;
+      width: 40%;
       height: auto;
       filter: drop-shadow(5px 5px 10px #444);
       margin: auto; }
@@ -163,7 +190,7 @@ footer {
 
 /* FIN-PAGINA RECETIPS */
 /* MEDIA QUERIES RECETIPS */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .recetip, .recetip-reverse {
     display: flex;
     flex-direction: column;
@@ -174,9 +201,9 @@ footer {
       width: 100%;
       margin: 10px; }
       .recetip .recetip__img img, .recetip-reverse .recetip__img img {
-        max-width: 80%;
+        max-width: 40%;
         height: auto;
-        margin: 5px 5px 0 5px; }
+        margin: auto; }
     .recetip .recetip__p, .recetip-reverse .recetip__p {
       width: 100%;
       padding: 10px; }
@@ -189,7 +216,7 @@ footer {
 
 /* INICIO-PAGINA PRODUCTOS */
 .subtitulosProductos {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
   padding-top: 15px; }
@@ -242,7 +269,7 @@ footer {
 
 /* FIN-PAGINA PRODUCTOS */
 /* MEDIA QUERIES PRODUCTOS */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .seccionGranolas, .recetip, .recetip-reverse, .seccionMix, .seccionBarras, .seccionMix, .seccionBarras {
     display: flex;
     flex-direction: column;
@@ -250,7 +277,13 @@ footer {
     .seccionGranolas div, .recetip div, .recetip-reverse div, .seccionMix div, .seccionBarras div, .seccionMix div, .seccionBarras div {
       width: 100%; }
     .seccionGranolas div:hover, .recetip div:hover, .recetip-reverse div:hover, .seccionMix div:hover, .seccionBarras div:hover, .seccionMix div:hover, .seccionBarras div:hover {
-      transform: scale(1); } }
+      transform: scale(1); }
+  .ingredientes {
+    padding: 0;
+    margin: 0; }
+  .precio {
+    padding: 5px;
+    margin: 10px 0 10px 0; } }
 
 /* INICIO-PAGINA PREGUNTAS FRECUENTES */
 .mainPreguntas {
@@ -264,20 +297,21 @@ footer {
     font-family: "Poppins", sans-serif; }
     .mainPreguntas .sectionPreguntas .card-header {
       background-color: #f5f3ec;
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
       filter: drop-shadow(5px 5px 10px rgba(68, 68, 68, 0.24)); }
       .mainPreguntas .sectionPreguntas .card-header .btn {
+        font-family: "Poppins", sans-serif;
         color: #343a40;
         text-decoration: none;
-        font-size: 1rem; }
+        font-size: 1rem;
+        font-weight: 500; }
     .mainPreguntas .sectionPreguntas .card-body {
-      font-size: 1em;
+      font-size: 1rem;
       color: #343a40; }
       .mainPreguntas .sectionPreguntas .card-body .btn {
         background-color: #f5f3ec; }
       .mainPreguntas .sectionPreguntas .card-body a {
-        color: #343a40; }
+        color: #343a40;
+        text-decoration: none; }
   .mainPreguntas .sectionCarousel {
     width: 40%;
     margin-top: 20px; }
@@ -332,9 +366,15 @@ footer {
     .inicio .inicio__info p {
       font-family: "Poppins", sans-serif;
       font-weight: 500;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       color: #343a40; }
-    .inicio .inicio__info button:hover {
+    .inicio .inicio__info .btn {
+      box-shadow: 0px 10px 10px -6px gray; }
+      .inicio .inicio__info .btn a {
+        font-family: "Poppins", sans-serif;
+        color: white;
+        text-decoration: none; }
+    .inicio .inicio__info .btn:hover {
       transform: scale(1.1); }
 
 .descripcionPuro {
@@ -343,8 +383,7 @@ footer {
   padding: 30px;
   color: #343a40;
   background-color: #f5f3ec;
-  box-shadow: 0px 10px 10px -6px gray;
-  /* INCLUYO MIXIN */ }
+  box-shadow: 0px 10px 10px -6px gray; }
   .descripcionPuro .descripcionPuro__imagen {
     width: 50%; }
     .descripcionPuro .descripcionPuro__imagen img {
@@ -362,10 +401,15 @@ footer {
     align-items: flex-start;
     justify-content: center; }
     .descripcionPuro .descripcionPuro__parrafo p {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       line-height: 40px; }
+    .descripcionPuro .descripcionPuro__parrafo .btn {
+      box-shadow: 0px 10px 10px -6px gray; }
+      .descripcionPuro .descripcionPuro__parrafo .btn a {
+        color: white;
+        text-decoration: none; }
 
 .animate__animated .animate__fadeInLeftBig {
   animation-iteration-count: 1; }
@@ -396,42 +440,18 @@ footer {
     padding: 0 10px; }
   .comoHagoMiPedido h3 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500; }
   .comoHagoMiPedido .iconos {
-    font-size: 5em;
+    font-size: 5rem;
     padding-bottom: 20px; }
 
-/* INICIO BOTONES INDEX */
-.botonIndex {
-  box-shadow: 0px 10px 10px -6px gray; }
-  .botonIndex a {
-    font-family: "Poppins", sans-serif;
-    color: white;
-    text-decoration: none; }
-
-.botonIndex:hover {
-  transform: scale(1.1); }
-
-.botonWsp {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  border-color: #1ad03f; }
-  .botonWsp a i {
-    font-size: 3.5rem; }
-  .botonWsp .btn {
-    background-color: #1ad03f;
-    border-color: #1ad03f;
-    border-radius: 50%; }
-
-/* FIN BOTONES INDEX */
 /* FIN-PAGINA INDEX */
 /* INICIO MEDIA QUERIES INDEX */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .inicio .inicio__info p {
-    font-size: 1.5em; }
+    font-size: 1.7rem; }
   .descripcionPuro {
     width: 90%;
     padding: 20px;
@@ -452,10 +472,9 @@ footer {
       justify-content: center; }
       .descripcionPuro .descripcionPuro__parrafo p {
         text-align: center;
-        font-size: 1em;
+        font-size: 1rem;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-        line-height: 1.5em;
         padding-top: 20px; }
       .descripcionPuro .descripcionPuro__parrafo button {
         margin: 5px 0; }
@@ -464,11 +483,11 @@ footer {
     flex-direction: column;
     align-items: space-around; }
     .comoHagoMiPedido h3 {
-      font-size: 1.2em; }
+      font-size: 1.2rem; }
     .comoHagoMiPedido div {
       padding: 5px 0 10px 0; }
     .comoHagoMiPedido .comoHagoMiPedido__iconos {
-      font-size: 4em; } }
+      font-size: 4rem; } }
 
 /* FIN MEDIA QUERIES INDEX */
 /* INCIO-PAGINA CONTACTO */
@@ -483,16 +502,22 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 20px; }
-  .sectionContacto iframe {
-    width: 500px;
-    height: 400px; }
+  .sectionContacto .sectionContacto__iframe {
+    width: 100%; }
+    .sectionContacto .sectionContacto__iframe iframe {
+      width: 90%;
+      height: 400px;
+      box-shadow: 0px 10px 10px -6px gray; }
   .sectionContacto .sectionContacto__info {
-    font-size: 1.2em;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
     color: #343a40;
+    background-color: #f5f3ec;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
     text-align: center;
-    margin: 20px; }
+    margin: 20px;
+    border-radius: 5px;
+    padding: 5px 15px 0 15px;
+    box-shadow: 0px 10px 10px -6px gray; }
     .sectionContacto .sectionContacto__info i {
       padding-right: 10px;
       color: #343a40; }
@@ -503,33 +528,32 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-form {
-  color: #343a40;
-  background-color: #f5f3ec;
-  padding: 10px 20px;
-  border-radius: 5px;
-  max-width: 90%;
-  margin-bottom: 40px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
-  font-weight: 400; }
-
-.botonSubmit {
-  margin-top: 16px; }
+  .sectionFormulario form {
+    color: #343a40;
+    background-color: #f5f3ec;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 90%;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0px 10px 10px -6px gray; }
+    .sectionFormulario form textarea {
+      resize: none; }
+    .sectionFormulario form .botonSubmit {
+      margin-top: 16px; }
 
 /* FIN-PAGINA CONTACTO */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .contacto {
     display: flex;
     flex-direction: column; }
   .sectionContacto {
-    width: 100%; }
-    .sectionContacto iframe {
-      width: 300px;
-      height: 400px; }
+    width: 100%;
+    text-align: center; }
     .sectionContacto .sectionContacto__info {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 10px 0;
       width: 80%; }
   .sectionFormulario {
@@ -537,7 +561,7 @@ form {
     margin-bottom: 30px; }
     .sectionFormulario form {
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 400;
       padding: 10px;
       margin: 10px; }
     .sectionFormulario .form-group legend {

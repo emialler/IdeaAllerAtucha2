@@ -34,25 +34,31 @@
         p {
             font-family: $fuente;
             font-weight: $negrita;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             color: $gris-oscuro;
-            
         }
 
-        button:hover {
+        .btn {
+            box-shadow: 0px 10px 10px -6px gray;
+            a {
+                font-family: $fuente;
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .btn:hover {
             transform: scale(1.1);
         }
-
     }
 }
-
 
 .descripcionPuro {
     display: flex;
     margin: 0 20px 20px 20px;
     padding: 30px;
     @include colores;    
-    box-shadow: 0px 10px 10px -6px gray;        /* INCLUYO MIXIN */
+    box-shadow: 0px 10px 10px -6px gray;
 
     .descripcionPuro__imagen {
         width: 50%;
@@ -76,10 +82,19 @@
         justify-content: center;
     
         p {
-            font-size: 1.2em;
+            font-size: 1.2rem;
             font-family: $fuente;
             font-weight: $negrita;
             line-height: 40px;
+        }
+
+        .btn {
+            box-shadow: 0px 10px 10px -6px gray;
+
+            a {
+            color: white;
+            text-decoration: none;
+            }
         }
     }
 }
@@ -119,68 +134,30 @@
     
     h3 {
         text-align: center;
-        font-size: 1.4em;
+        font-size: 1.4rem;
         font-family: $fuente;
         font-weight: $negrita;
     }
 
     .iconos {
-        font-size: 5em;
+        font-size: 5rem;
         padding-bottom: 20px;
     }
-    
 }
-
-/* INICIO BOTONES INDEX */
-
-.botonIndex {
-    box-shadow: 0px 10px 10px -6px gray;
-
-    a {
-        font-family: $fuente;
-        color: white;
-        text-decoration: none;
-    }
-}
-
-.botonIndex:hover {
-    transform: scale(1.1);
-}
-
-.botonWsp {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    border-color: #1ad03f;
-
-    a {
-        i {
-            font-size: 3.5rem;
-        }
-    }
-
-    .btn {
-        background-color: #1ad03f;
-        border-color: #1ad03f;
-        border-radius: 50%;
-    }
-}
-
-/* FIN BOTONES INDEX */
 
 /* FIN-PAGINA INDEX */
 
 
 /* INICIO MEDIA QUERIES INDEX */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     
     .inicio {
 
         .inicio__info {
         
             p {
-               font-size: 1.5em; 
+               font-size: 1.7rem; 
             }
         }
     }
@@ -211,10 +188,9 @@
         
             p {
                 text-align: center;
-                font-size: 1em;
+                font-size: 1rem;
                 font-family: $fuente;
                 font-weight: $normal;
-                line-height: 1.5em;
                 padding-top: 20px;
             }
 
@@ -230,7 +206,7 @@
         align-items: space-around;
 
         h3 {
-            font-size: 1.2em;
+            font-size: 1.2rem;
         }
 
         div {
@@ -238,7 +214,7 @@
         }
 
         .comoHagoMiPedido__iconos {
-            font-size: 4em;
+            font-size: 4rem;
         }
     }
 }

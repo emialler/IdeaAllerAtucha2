@@ -15,18 +15,25 @@
     align-items: center;
     margin-top: 20px;   
 
-    iframe {
-        width: 500px;
-        height: 400px;
+    .sectionContacto__iframe {
+        width: 100%;
+
+        iframe {
+            width: 90%;
+            height: 400px;
+            box-shadow: 0px 10px 10px -6px gray;
+        }
     }
 
     .sectionContacto__info {
-        font-size: 1.2em;
+        @include colores;
+        font-size: 1.2rem;
         font-family: $fuente;
-        font-weight: $normal;
-        color: $gris-oscuro;
         text-align: center;
         margin: 20px;
+        border-radius: 5px;
+        padding: 5px 15px 0 15px;
+        box-shadow: 0px 10px 10px -6px gray;
 
         i {
             padding-right: 10px;
@@ -41,27 +48,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    form {
+        @include colores;
+        padding: 10px 20px;
+        border-radius: 5px;
+        max-width: 90%;
+        margin-bottom: 40px;
+        font-family: $fuente;
+        font-size: 1rem;
+        font-weight: $normal;
+        box-shadow: 0px 10px 10px -6px gray;
+
+        textarea {
+            resize: none;
+        }
+
+        .botonSubmit {
+            margin-top: 16px;
+        }
+    }
 }
 
-form {
-    @include colores;
-    padding: 10px 20px;
-    border-radius: 5px;
-    max-width: 90%;
-    margin-bottom: 40px;
-    font-family: $fuente;
-    font-size: 1em;
-    font-weight: $normal;
-}
-
-.botonSubmit {
-    margin-top: 16px;
-}
 
 /* FIN-PAGINA CONTACTO */
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .contacto {
         display: flex;
@@ -70,14 +83,10 @@ form {
 
     .sectionContacto {
         width: 100%;
-
-        iframe {
-            width: 300px;
-            height: 400px;
-        }
+        text-align: center;
 
         .sectionContacto__info {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin: 10px 0;
             width: 80%;
         }
@@ -89,7 +98,7 @@ form {
 
         form {
             font-size: 1rem;
-            font-weight: $negrita;
+            font-weight: $normal;
             padding: 10px;
             margin: 10px;
         }
