@@ -1,17 +1,17 @@
-$fuente: 'Poppins', sans-serif;
-$negrita: 500;
-$normal: 400;
-$gris-oscuro: #343a40;
-$gris-claro: #f5f3ec; 
-$transicion: all 0.5s;
+// $fuente: 'Poppins', sans-serif;
+// $negrita: 500;
+// $normal: 400;
+// $gris-oscuro: #343a40;
+// $gris-claro: #f5f3ec; 
+// $transicion: all 0.5s;
 
 
-@mixin colores{
-    color: $gris-oscuro;
-    background-color: $gris-claro;
-}
+// @mixin colores{
+//     color: #0B5538;
+//     background-color: white;
+// }
 
-@mixin colores-reverse{
-    color: white;
-    background-color: $gris-oscuro;
-}
+// @mixin colores-reverse{
+//     color: white;
+//     background-color: #BD9941;
+// }

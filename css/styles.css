@@ -7,19 +7,17 @@ html {
   overflow-x: hidden; }
 
 main {
-  margin-top: 105px;
+  /* margin-top: 105px; */
   margin-bottom: 50px; }
 
 /* FIN GENERAL */
 /* INICIO-HEADER */
 header, .navbar {
-  background-color: white; }
+  background-color: #FAF3E8; }
 
-.navbar {
-  box-shadow: 0px 0px 40px gray; }
   .navbar .navbar-nav li {
     padding: 0 24px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 1.25rem;
     font-weight: 500; }
     .navbar .navbar-nav li .active {
@@ -35,7 +33,7 @@ header, .navbar {
 
 nav span {
   font-size: 1.25rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   color: #343a40; }
 
@@ -43,7 +41,7 @@ nav span {
 /* INICIO-FOOTER */
 footer {
   color: white;
-  background-color: #343a40;
+  background-color: #0B5538;
   width: 100%;
   margin-bottom: 0;
   display: flex;
@@ -56,7 +54,7 @@ footer {
     font-size: 1rem;
     text-align: center;
     padding-top: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 400; }
   footer .footerSecciones {
     display: flex;
@@ -65,7 +63,7 @@ footer {
     justify-content: center;
     width: 33%;
     height: 80%;
-    font-family: "Poppins", sans-serif; }
+    font-family: "Cormorant Garamond", serif; }
     footer .footerSecciones #suscribirse {
       padding-bottom: 30px; }
     footer .footerSecciones img {
@@ -80,7 +78,7 @@ footer {
         transition: all 0.5s; }
     footer .footerSecciones h3 {
       font-size: 1.2rem;
-      font-family: "Poppins", sans-serif;
+      font-family: "Cormorant Garamond", serif;
       text-align: center;
       font-weight: 400;
       padding-top: 20px;
@@ -97,11 +95,11 @@ footer {
 /* SUBTITULOS COMPARTIDOS */
 .subtitulos {
   color: white;
-  background-color: #343a40;
+  background-color: #0B5538;
   margin: 25px 0;
   box-shadow: 0px 10px 10px -6px gray; }
   .subtitulos h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-size: 1.8rem;
     text-align: center;
@@ -144,7 +142,7 @@ footer {
   .subtitulos {
     margin: 25px 0; }
     .subtitulos h2 {
-      font-family: "Poppins", sans-serif;
+      font-family: "Cormorant Garamond", serif;
       font-weight: 500;
       font-size: 1.2rem;
       text-align: center;
@@ -228,6 +226,10 @@ footer {
         padding: 10px 0; } }
 
 /* INICIO-PAGINA PRODUCTOS */
+
+#valores {
+  margin-top: 120px;
+}
 .subtitulosProductos, .ingredientes, .precio {
   font-family: "Poppins", sans-serif;
   text-align: center; }
@@ -317,7 +319,7 @@ footer {
       filter: drop-shadow(5px 5px 10px rgba(68, 68, 68, 0.24)); }
       .mainPreguntas .sectionPreguntas .card-header .btn {
         font-family: "Poppins", sans-serif;
-        color: #343a40;
+        color: #BD9941;
         text-decoration: none;
         font-size: 1rem;
         font-weight: 500; }
@@ -358,39 +360,40 @@ footer {
 /* FIN MEDIA QUERIES PREGUNTAS FRECUENTES */
 /* INICIO-PAGINA INDEX */
 .inicio {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   height: 500px;
-  background-image: url(../images/fondo.jpg);
+  background-image: url(../images/fondo.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
   position: relative;
   display: block;
-  box-shadow: 0px 10px 10px -6px gray; }
+  box-shadow: 0px 10px 10px -6px gray;
+
+}
   .inicio .inicio__opacidad {
     position: absolute;
-    margin-top: 150px;
-    background-color: white;
-    opacity: 0.5;
-    height: 200px;
+    background-color: #FAF3E8;
+    opacity: 0.7;
+    height: 100%;
     width: 100%; }
   .inicio .inicio__info {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 200px;
     position: absolute;
-    margin-top: 180px; }
-    .inicio .inicio__info p {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-size: 2.4rem;
-      color: #343a40; }
+  }
+    .inicio img {
+      width: 70%;
+      margin-top: 100px;
+      margin-bottom: 30px; }
     .inicio .inicio__info .btn {
       box-shadow: 0px 10px 10px -6px gray; }
       .inicio .inicio__info .btn a {
-        font-family: "Poppins", sans-serif;
+        font-family: "Cormorant Garamond", serif;
         color: white;
         text-decoration: none; }
 
@@ -398,8 +401,8 @@ footer {
   display: flex;
   margin: 0 20px 20px 20px;
   padding: 30px;
-  color: #343a40;
-  background-color: #f5f3ec;
+  color: #0B5538;
+  background-color: #FAF3E8;
   box-shadow: 0px 10px 10px -6px gray; }
   .descripcionPuro .descripcionPuro__imagen {
     width: 50%; }
@@ -411,17 +414,17 @@ footer {
       display: block;
       margin: auto; }
   .descripcionPuro .descripcionPuro__parrafo {
-    width: 50%;
+
     max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }
     .descripcionPuro .descripcionPuro__parrafo p {
-      font-size: 1.2rem;
-      font-family: "Poppins", sans-serif;
+      font-family: "Cormorant Garamond", serif;
       font-weight: 500;
-      line-height: 40px; }
+      line-height: 30px;
+   }
     .descripcionPuro .descripcionPuro__parrafo .btn {
       box-shadow: 0px 10px 10px -6px gray; }
       .descripcionPuro .descripcionPuro__parrafo .btn a {
@@ -449,11 +452,15 @@ footer {
   .comoHagoMiPedido h3 {
     text-align: center;
     font-size: 1.4rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 500; }
   .comoHagoMiPedido .iconos {
     font-size: 5rem;
     padding-bottom: 20px; }
+
+    .btn {
+      background-color: #BD9941;
+    }
 
 /* FIN-PAGINA INDEX */
 /* INICIO MEDIA QUERIES INDEX */
@@ -481,9 +488,9 @@ footer {
       .descripcionPuro .descripcionPuro__parrafo p {
         text-align: center;
         font-size: 1rem;
-        font-family: "Poppins", sans-serif;
+        font-family: "Cormorant Garamond", serif;
         font-weight: 400;
-        padding-top: 20px; }
+      }
       .descripcionPuro .descripcionPuro__parrafo button {
         margin: 5px 0; }
   .comoHagoMiPedido {
@@ -505,6 +512,10 @@ footer {
   justify-content: space-around;
   align-items: flex-start; }
 
+#contacto {
+  margin-top: 120px;
+}
+
 .sectionContacto {
   width: 50%;
   display: flex;
@@ -521,7 +532,7 @@ footer {
     color: #343a40;
     background-color: #f5f3ec;
     font-size: 1.2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     text-align: center;
     margin: 20px;
     border-radius: 5px;
